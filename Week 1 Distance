@@ -1,0 +1,33 @@
+
+title: "Homework 01 - Distance"
+author: "Alessandro Corradini - Harvard Data Science for Life Science XSeries"
+output:
+  html_document: default
+  pdf_document: default
+
+
+
+If you have not done so already, install the data package tissueGeneExpression.
+
+```{r}
+  library(devtools)
+  install_github("genomicsclass/tissuesGeneExpression")
+```
+
+The data represents RNA expression levels for seven tissues, each with several biological replictes. We call samples that we consider to be from the same population, such as liver tissue from different individuals,biological replictes:
+
+```{r}
+library(tissuesGeneExpression)
+data(tissuesGeneExpression)
+head(e)
+head(tissue)
+```
+
+How many biological replicates for hippocampus?
+
+```{r}
+sum(tissue=="hippocampus")
+```
+
+
+
